@@ -1,0 +1,32 @@
+<script>
+    /*
+    Contador de Nomes Longos
+Dado o array de nomes: ["Ana", "Carlos", "Beatriz", "Augusto", "Fernanda"].
+Peça ao usuário para inserir um novo nome no array. 
+Em seguida, utilizando for...of, conte quantos nomes na lista possuem mais de 5 caracteres. 
+Apresente para o usuário qual o número total de nomes longos encontrados.
+    */
+
+    //entrada
+    
+    let nomesLongos = ["Ana", "Carlos", "Beatriz", "Augusto", "Fernanda"];
+
+    let nomeNovo = prompt(`Diga um novo nome:`).trim().toLowerCase();
+
+    nomesLongos.push(nomeNovo);
+
+
+    //processo
+
+    let nomesMaisQueCinco = 0;
+
+    for (let nomes of nomesLongos) {
+        if (nomes.length > 5) {
+            nomesMaisQueCinco++;
+        }
+    }
+
+    //saida
+    document.write(nomesMaisQueCinco);
+
+</script>

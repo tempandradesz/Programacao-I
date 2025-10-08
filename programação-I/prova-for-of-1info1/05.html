@@ -1,0 +1,29 @@
+<script>
+    /*
+    Filtrando Cidades da Lista
+Considere a seguinte lista de cidades: ["Recife", "Salvador", "Rio de Janeiro", "São Paulo", "Manaus"].
+Peça para o usuário digitar uma letra.
+Usando for...of, crie um novo array contendo apenas as cidades da lista original
+que começam com a letra informada pelo usuário.
+Ao final, exiba o novo array com as cidades que atenderam a condição.
+    */
+
+    let listaDeCidades = ["Recife", "Salvador", "Rio de Janeiro", "São Paulo", "Manaus"];
+
+    const digiteLetra = prompt("Digite uma letra:").trim().toLowerCase();
+
+    let listaCidadesLetraInformada = [];
+
+    for (let cidade of listaDeCidades) {
+
+        if (cidade.toLowerCase().startsWith(digiteLetra)) {
+            listaCidadesLetraInformada.push(cidade);
+        }
+    }
+
+    if (listaCidadesLetraInformada.length > 0) {
+        document.write(`Cidades que começam com a letra "${digiteLetra.toUpperCase()}": ${listaCidadesLetraInformada.join(", ")}`);
+    } else {
+        document.write(`Não há cidades que começam com a letra "${digiteLetra.toUpperCase()}".`);
+    }
+</script>

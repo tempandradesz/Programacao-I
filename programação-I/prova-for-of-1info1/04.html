@@ -1,0 +1,27 @@
+<script>
+    /*
+    Somar Números Ímpares
+Dado o Array [33, 5, 88, 12, 91, 25], peça para o usuário inserir um novo número no Array.
+Depois, usando for...of, encontre qual é a quantidade de números ímpares presentes no Array.
+Apresente para o usuário a quantidade de números ímpares.
+    */
+
+    //entrada
+    let listaNumerosEmbaralhados = [33, 5, 88, 12, 91, 25];
+
+    let numeroNovo = Number(prompt(`Informe um novo número:`));
+    listaNumerosEmbaralhados.push(numeroNovo);
+
+    //processo
+    let somaImpares = 0;
+
+    for (let numeros of listaNumerosEmbaralhados) {
+        if (numeros % 2 === 1) {
+            somaImpares ++;
+        }
+    }
+    
+    //saida
+    document.write(`A quantidade de números ímpares é: ${somaImpares}`);
+
+</script>
