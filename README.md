@@ -1,2 +1,2 @@
 # Programacao-I
-Primeiro ensino de progrmação. Estará as listas de exercícios
+Primeiro ensino de progrmação. Estará as listas de exercícios em javascript
